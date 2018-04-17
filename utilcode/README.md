@@ -2,7 +2,7 @@
 
 Gradle:
 ```groovy
-implementation 'com.blankj:utilcode:1.13.11'
+implementation 'com.blankj:utilcode:1.13.12'
 ```
 
 
@@ -636,7 +636,8 @@ getZodiac
 setGravity
 setBgColor
 setBgResource
-setMessageColor
+setMsgColor
+setMsgTextSize
 showShort
 showLong
 showCustomShort
