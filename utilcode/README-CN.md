@@ -2,13 +2,13 @@
 
 Gradle:
 ```groovy
-implementation 'com.blankj:utilcode:1.13.12'
+implementation 'com.blankj:utilcode:1.13.14'
 ```
 
 
 ## How to use
 
-```
+```java
 // init it in the function of onCreate in ur Application
 Utils.init(application);
 ```
@@ -85,6 +85,8 @@ setNotificationBarVisibility         : 设置通知栏是否可见
 getNavBarHeight                      : 获取导航栏高度
 setNavBarVisibility                  : 设置导航栏是否可见
 setNavBarImmersive                   : 设置导航栏沉浸式
+setNavBarColor                       : 设置导航栏颜色
+getNavBarColor                       : 获取导航栏颜色
 isNavBarVisible                      : 判断导航栏是否可见
 ```
 
@@ -430,6 +432,8 @@ sendSmsSilent      : 发送短信
 getForegroundProcessName  : 获取前台线程包名
 killAllBackgroundProcesses: 杀死所有的后台服务进程
 killBackgroundProcesses   : 杀死后台服务进程
+isMainProcess             : 判断是否运行在主进程
+getCurrentProcessName     : 获取当前进程名称
 ```
 
 * ### 反射相关 -> [ReflectUtils.java][reflect.java] -> [Test][reflect.test]

@@ -2,13 +2,13 @@
 
 Gradle:
 ```groovy
-implementation 'com.blankj:utilcode:1.13.12'
+implementation 'com.blankj:utilcode:1.13.14'
 ```
 
 
 ## How to use
 
-```
+```java
 // init it in the function of onCreate in ur Application
 Utils.init(application);
 ```
@@ -85,6 +85,8 @@ setNotificationBarVisibility
 getNavBarHeight
 setNavBarVisibility
 setNavBarImmersive
+setNavBarColor
+getNavBarColor
 isNavBarVisible
 ```
 
@@ -430,6 +432,8 @@ sendSmsSilent
 getForegroundProcessName
 killAllBackgroundProcesses
 killBackgroundProcesses
+isMainProcess
+getCurrentProcessName
 ```
 
 * ### About Reflect -> [ReflectUtils.java][reflect.java] -> [Test][reflect.test]
