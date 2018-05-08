@@ -21,7 +21,7 @@ import com.blankj.utilcode.util.ToastUtils;
  *     author: Blankj
  *     blog  : http://blankj.com
  *     time  : 2016/10/13
- *     desc  : App 工具类 Demo
+ *     desc  : demo about AppUtils
  * </pre>
  */
 
@@ -51,15 +51,10 @@ public class AppActivity extends BaseBackActivity {
         findViewById(R.id.btn_uninstall_app).setOnClickListener(this);
         findViewById(R.id.btn_uninstall_app_silent).setOnClickListener(this);
         findViewById(R.id.btn_launch_app).setOnClickListener(this);
+        findViewById(R.id.btn_relaunch_app).setOnClickListener(this);
         findViewById(R.id.btn_exit_app).setOnClickListener(this);
         findViewById(R.id.btn_launch_app_details_settings).setOnClickListener(this);
         TextView tvAboutApp = findViewById(R.id.tv_about_app);
-//        "pkg name: " + getPackageName() +
-//                "\napp name: " + getName() +
-//                "\napp path: " + getPackagePath() +
-//                "\napp v name: " + getVersionName() +
-//                "\napp v code: " + getVersionCode() +
-//                "\nis system: " + isSystem();
         tvAboutApp.setText(new SpanUtils()
                 .appendLine("isAppRoot: " + AppUtils.isAppRoot())
                 .appendLine("isAppDebug: " + AppUtils.isAppDebug())
@@ -94,10 +89,7 @@ public class AppActivity extends BaseBackActivity {
                             AssertHelper.releaseInstallApk(new AssertHelper.OnReleasedListener() {
                                 @Override
                                 public void onReleased() {
-                                    AppUtils.installApp(
-                                            Config.TEST_APK_PATH,
-                                            "com.blankj.androidutilcode.provider"
-                                    );
+                                    AppUtils.installApp(Config.TEST_APK_PATH);
                                 }
                             });
                         }
@@ -135,6 +127,9 @@ public class AppActivity extends BaseBackActivity {
                 break;
             case R.id.btn_launch_app:
                 AppUtils.launchApp(this.getPackageName());
+                break;
+            case R.id.btn_relaunch_app:
+                AppUtils.relaunchApp();
                 break;
             case R.id.btn_launch_app_details_settings:
                 AppUtils.launchAppDetailsSettings();

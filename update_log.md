@@ -1,3 +1,14 @@
+* 18/05/08 新增 ResourceUtils，发布 1.15.0 版本
+* 18/05/07 修复 ZipUtils 漏洞，发布 1.14.4 版本
+* 18/05/03 修复 ToastUtils 默认字体大小问题，发布 1.14.3 版本
+* 18/05/02 修复 PermissionUtils 空异常，发布 1.14.2 版本
+* 18/04/28 新增 FlashlightUtils，发布 1.14.1 版本
+* 18/04/26 修复 KeyboardUtils 全屏 NO_LIMIT 的 bug
+* 18/04/25 修复多个空异常
+* 18/04/24 修复多 FileProvider 带来的问题，发布 1.14.0 版本
+* 18/04/23 新增 RSA 加解密，发布 1.13.16 版本
+* 18/04/22 新增 LogUtils 设置栈偏移
+* 18/04/21 新增 AppUtils#relaunchApp、DeviceUtils#getABIs，发布 1.13.15 版本
 * 18/04/20 新增 BarUtils#setNavBarColor、BarUtils#getNavBarColor
 * 18/04/19 新增 Process#isMainProcess、Process#getCurrentProcessName，发布 1.13.14 版本
 * 18/04/18 修复 LogUtils 头部空指针异常，SPUtils、CacheUtils 存储空值异常，发布 1.13.13 版本

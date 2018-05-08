@@ -40,6 +40,17 @@ bd09ToWGS84
 wgs84ToBd09
 ```
 
+* ### About Flashlight -> [FlashlightUtils.java][flashlight.java] -> [Demo][flashlight.test]
+```
+getInstance
+Instance.register
+Instance.unregister
+Instance.setFlashlightOn
+Instance.setFlashlightOff
+Instance.isFlashlightOn
+isFlashlightEnable
+```
+
 * ### About Gson -> [GsonUtils.java][gson.java] -> [Test][gson.test]
 ```
 getGson
@@ -104,6 +115,9 @@ scheduleWithFixedDelay
 
 [coordinate.java]: https://github.com/Blankj/AndroidUtilCode/blob/master/subutil/src/main/java/com/blankj/subutil/util/CoordinateUtils.java
 [coordinate.test]: https://github.com/Blankj/AndroidUtilCode/blob/master/subutil/src/test/java/com/blankj/subutil/util/CoordinateUtilsTest.java
+
+[flashlight.java]: https://github.com/Blankj/AndroidUtilCode/blob/master/subutil/src/main/java/com/blankj/subutil/util/FlashlightUtils.java
+[flashlight.demo]: https://github.com/Blankj/AndroidUtilCode/blob/master/app/src/main/java/com/blankj/androidutilcode/feature/sub/flashlight/FlashlightActivity.java
 
 [gson.java]: https://github.com/Blankj/AndroidUtilCode/blob/master/subutil/src/main/java/com/blankj/subutil/util/GsonUtils.java
 [gson.test]: https://github.com/Blankj/AndroidUtilCode/blob/master/subutil/src/test/java/com/blankj/subutil/util/GsonUtilsTest.java
